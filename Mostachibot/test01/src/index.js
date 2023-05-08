@@ -7,7 +7,7 @@ client.connect();
 client.on('message', async (channel, tags, message, self) => {
 	// Ignore echoed messages.
 	if(self) return;
-  console.log(tags)
+  // console.log(tags)
 	if(message.toLowerCase().includes('mostachi')) {
 		// "@alca, heya!"
     const answer = await makeCall(tags.username,message,50) 
